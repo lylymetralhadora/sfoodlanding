@@ -1,0 +1,98 @@
+.d-none {
+  display: none;
+}
+
+@media screen and (min-width:414px) and (max-width: 550px) {
+
+  #containers {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  header{
+    padding-left: 20px;
+  }
+
+  #div-header {
+    display: none;
+  }
+
+  .img-header {
+    display: block !important;
+  }
+
+  #img-lista{
+    height: 5vh;
+  }
+
+  #body-div2 {
+    width: 90%;
+    height: 52%;
+    background-size: 28vh;
+  }
+
+  #button-div2 {
+    width: 25vw;
+    height: 4vh;
+  }
+
+  #body-div3 {
+    width: 90%;
+    height: 52%;
+    background-size: 23vh;
+  }
+
+  #button-div3 {
+    width: 25vw;
+    height: 4vh;
+  }
+
+  #div4-card {
+    width: 80%;
+    height: 65%;
+  }
+
+  #input-card {
+    width: 70vw;
+    height: 4vh;
+  }
+
+  #button-card {
+    width: 30vw;
+    height: 4vh;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #div2-footer {
+    width: 42vh;
+  }
+
+  #input-footer1 {
+    width: 75vw;
+    height: 4vh;
+  }
+
+  #input-footer2 {
+    width: 75vw;
+    height: 4vh;
+  }
+
+  #button-footer {
+    width: 35vw;
+    height: 4vh;
+  }
+
+  #div3-footer {
+    width: 42vh;
+  }
+
+  #foto-footer {
+    width: 10vw;
+    height: 5vh;
+  }
+}
