@@ -2,16 +2,16 @@ let button = document.getElementById("button-footer");
 
 button.onclick = async function() {
     
-    let title           = document.getElementById("input-footer1").value;
-    let description     = document.getElementById("input-footer2").value;
-    let data            = {title,description}
+    let nome             = document.getElementById("input-footer1").value;
+    let email            = document.getElementById("input-footer2").value;
+    let data             = {nome,email}
     
-    const response = await fetch('http://localhost:3002/api/store/task', {
+    const response = await fetch('http://localhost:3002/api/store/users', {
         method: "POST",
         headers: {"Content-type": "application/json;charset=UTF-8"},
         body: JSON.stringify(data)
     });
-    // alert(description);
+        // alert(nome);
     
     let content = await response.json();
     

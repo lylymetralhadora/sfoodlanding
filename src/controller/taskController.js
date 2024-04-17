@@ -2,11 +2,11 @@ const connection = require('../config/db');
 
 async function storeTask(request, response) {
     const params = Array(
-        request.body.title,
-        request.body.description
+        request.body.nome,
+        request.body.email
     );
 
-    const query = "INSERT INTO tasks(title,description) VALUE(?,?)";
+    const query = "INSERT INTO users(nome,email) VALUE(?,?)";
 
     connection.query(query, params, (err, results) => {
         if (results) {
